@@ -15,6 +15,7 @@ class ComposerStaticInit7ae61d5b784d919ea69267cf2ce2ca36
         'Z' => 
         array (
             'Zend\\' => 5,
+            'ZendXml\\' => 8,
         ),
         'G' => 
         array (
@@ -43,6 +44,10 @@ class ComposerStaticInit7ae61d5b784d919ea69267cf2ce2ca36
         array (
             0 => __DIR__ . '/..' . '/zendframework/zendframework/library/Zend',
         ),
+        'ZendXml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zendxml/src',
+        ),
         'Garethellis\\CrontabScheduleGenerator\\' => 
         array (
             0 => __DIR__ . '/..' . '/garethellis/crontab-schedule-generator/src',
@@ -66,13 +71,6 @@ class ComposerStaticInit7ae61d5b784d919ea69267cf2ce2ca36
     );
 
     public static $prefixesPsr0 = array (
-        'Z' => 
-        array (
-            'ZendXml\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/zendframework/zendxml/library',
-            ),
-        ),
         'S' => 
         array (
             'Svg\\' => 

@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ZendXml\\' => array($vendorDir . '/zendframework/zendxml/library'),
     'Svg\\' => array($vendorDir . '/phenx/php-svg-lib/src'),
     'Sabberworm\\CSS' => array($vendorDir . '/sabberworm/php-css-parser/lib'),
     'PhpBoletoZf2' => array($vendorDir . '/jotjunior/boletophp-zf2/src'),

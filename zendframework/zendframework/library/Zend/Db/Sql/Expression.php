@@ -134,6 +134,16 @@ class Expression extends AbstractExpression
         $parameters = (is_scalar($this->parameters)) ? array($this->parameters) : $this->parameters;
         $parametersCount = count($parameters);
         $expression = str_replace('%', '%%', $this->expression);
+        #Alysson - Tratando a mascara de datas so Expression
+        if(strpos($expression, "DATE_FORMAT(")) #Tem
+        {
+            $expression = str_replace('%%', '%', $this->expression);
+        }
+        else #Nao Tem
+        {
+            $expression = str_replace('%', '%%', $this->expression);
+        }
+        #Alysson - Tratando a mascara de datas so Expression
 
         if ($parametersCount == 0) {
             return array(

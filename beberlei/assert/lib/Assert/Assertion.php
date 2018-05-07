@@ -983,8 +983,6 @@ class Assertion
      *
      * This is an alias of {@see choice()}.
      *
-     * @aliasOf choice()
-     *
      * @param mixed                $value
      * @param array                $choices
      * @param string|callable|null $message
@@ -1883,8 +1881,9 @@ class Assertion
     {
         if ($count !== \count($countable)) {
             $message = \sprintf(
-                static::generateMessage($message ?: 'List does not contain exactly "%d" elements.'),
-                static::stringify($count)
+                static::generateMessage($message ?: 'List does not contain exactly %d elements (%d given).'),
+                static::stringify($count),
+                static::stringify(\count($countable))
             );
 
             throw static::createException($countable, $message, static::INVALID_COUNT, $propertyPath, array('count' => $count));
@@ -1970,8 +1969,6 @@ class Assertion
      * @param string|null          $propertyPath
      *
      * @return bool
-     *
-     * @throws
      */
     public static function methodExists($value, $object, $message = null, $propertyPath = null)
     {
@@ -2209,7 +2206,7 @@ class Assertion
         static::string($value, $message, $propertyPath);
         static::string($format, $message, $propertyPath);
 
-        $dateTime = \DateTime::createFromFormat($format, $value);
+        $dateTime = \DateTime::createFromFormat('!' . $format, $value);
 
         if (false === $dateTime || $value !== $dateTime->format($format)) {
             $message = \sprintf(

@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Zend\\' => array($vendorDir . '/zendframework/zendframework/library/Zend'),
+    'ZendXml\\' => array($vendorDir . '/zendframework/zendxml/src'),
     'Garethellis\\CrontabScheduleGenerator\\' => array($vendorDir . '/garethellis/crontab-schedule-generator/src'),
     'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src/FontLib'),
     'Dompdf\\' => array($vendorDir . '/dompdf/dompdf/src'),
