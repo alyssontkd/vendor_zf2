@@ -139,11 +139,11 @@ class Expression extends AbstractExpression
         {
             $expression = str_replace('%%', '%', $this->expression);
         }
-        else #Nao Tem
-        {
-            $expression = str_replace('%', '%%', $this->expression);
-        }
-        #Alysson - Tratando a mascara de datas so Expression 
+        #else #Nao Tem
+        #{
+        #    $expression = str_replace('%', '%%', $this->expression);
+        #}
+        #Alysson - Tratando a mascara de datas so Expression
 
         if ($parametersCount == 0) {
             return array(
