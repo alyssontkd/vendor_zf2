@@ -143,7 +143,7 @@ class Expression extends AbstractExpression
         {
             $expression = str_replace('%', '%%', $this->expression);
         }
-        #Alysson - Tratando a mascara de datas so Expression
+        #Alysson - Tratando a mascara de datas so Expression 
 
         if ($parametersCount == 0) {
             return array(
