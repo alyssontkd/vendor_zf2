@@ -7,7 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit7ae61d5b784d919ea69267cf2ce2ca36
 {
     public static $files = array (
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'a4ecaeafb8cfb009ad0e052c90355e98' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/functions.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '305374ec0b40d4ce13002481b6e24809' => __DIR__ . '/..' . '/garethellis/crontab-schedule-generator/src/Functions.php',
     );
 
@@ -17,8 +20,15 @@ class ComposerStaticInit7ae61d5b784d919ea69267cf2ce2ca36
             'Zend\\' => 5,
             'ZendXml\\' => 8,
         ),
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+        ),
         'G' => 
         array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
             'Garethellis\\CrontabScheduleGenerator\\' => 37,
         ),
         'F' => 
@@ -47,6 +57,22 @@ class ComposerStaticInit7ae61d5b784d919ea69267cf2ce2ca36
         'ZendXml\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zendxml/src',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Garethellis\\CrontabScheduleGenerator\\' => 
         array (
@@ -87,6 +113,13 @@ class ComposerStaticInit7ae61d5b784d919ea69267cf2ce2ca36
             'PhpBoletoZf2' => 
             array (
                 0 => __DIR__ . '/..' . '/jotjunior/boletophp-zf2/src',
+            ),
+        ),
+        'G' => 
+        array (
+            'Gerencianet' => 
+            array (
+                0 => __DIR__ . '/..' . '/gerencianet/gerencianet-sdk-php/src',
             ),
         ),
         'D' => 
